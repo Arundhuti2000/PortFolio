@@ -194,6 +194,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 }
 .about-heading{
     text-align: center;
@@ -390,7 +391,7 @@ li{
       border-left: 4px solid;
       border-radius: .8rem;
       background-color: rgba(0,0,0,0.05);
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       margin: 0 auto;
       position: relative;
       padding: 5rem;
