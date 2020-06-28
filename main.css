@@ -17,7 +17,7 @@ body{
 
 }
 section{
-    padding: 6rem;
+    padding: 6rem 0;
 }
 a{
     text-decoration: none;
@@ -28,6 +28,7 @@ p{
     font-size: 1.8rem;
     font-weight: 300;
     margin-right: 5rem;
+    margin-bottom: 5rem;
 }
 img{
     width: 100%;
@@ -42,7 +43,7 @@ img{
 }
 .section-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 .section-heading h1{
     font-size: 3.5rem;
@@ -212,8 +213,9 @@ li{
     font-weight: 300;
 }
 .profile-img{
-    
+    position: relative;
     width: 22%;
+    display: flex;
     margin: 10rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     
@@ -301,7 +303,7 @@ li{
 }
 .portfolio-description h1{
     font-size: 3rem;
-    margin: 1rem 0;
+    
     font-weight: 300;
     
 
@@ -314,8 +316,8 @@ li{
 
 }
 .portfolio-description .cta{
+    margin-bottom: 2rem;
     display: inline-block;
-    margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #3883ff;
@@ -331,7 +333,7 @@ li{
     perspective: 1000px;
   }
   
-  .flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -341,11 +343,11 @@ li{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
-  .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
-  .flip-card-front, .flip-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -353,7 +355,7 @@ li{
     backface-visibility: hidden;
   }
   
-  .flip-card-front {
+.flip-card-front {
     
     color: black;
   }
@@ -480,6 +482,7 @@ input[type="submit"]:hover{
 }
 .copyright{
     width: 100%;
+    display: block;
     text-align: center;
     background-color: #16162d;
     padding: 2rem 0;
@@ -489,7 +492,7 @@ input[type="submit"]:hover{
     position: absolute;
     width: 5rem;
     height: 5rem;
-
+    cursor: pointer;
     background-color: #eee;
     top: -2.5rem;
     right: 5rem;
@@ -516,4 +519,131 @@ input[type="submit"]:hover{
     100%{
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
     }
+}
+/* 
+media queries */
+@media screen and (max-width: 768px){
+    body{
+
+        background: url("images/sitebg1112.jpg") no-repeat center fixed;
+        background-size: cover;
+    
+    }
+    .landing-text h1{
+        font-size: 8rem;
+    }
+    .landing-text h6{
+        font-size: 1.7rem;
+
+    }
+    .nav-list{
+        flex-direction: column;
+        
+    }
+    li{
+        margin: 2rem 0;
+    }
+    .nav-link{
+        font-size: 3rem;
+    }
+    .about-heading h1{
+        margin-top: 8rem;
+        margin-right: 2rem;
+        font-size: 5rem;
+    }
+    .section-heading h1{
+        font-size: 3rem;
+
+    }
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+    .portfolio-item{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .portfolio-img{
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    .icon-container{
+        width: 7rem;
+        height: 7rem;
+
+    }
+    .icon-container i{
+        font-size: 4rem;
+
+    }
+    .timeline ul{
+        margin: 0 0 0 auto;
+    }
+    .timeline .date::before{
+        left: -15rem;
+    }
+    .timeline .date::after{
+        left: -5rem;
+    }
+    .portfolio-description .cta{
+        margin-bottom: 2rem;
+        
+    }
+    
+
+}
+@media screen and (max-width: 600px){
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+    .landing-text h1{
+        font-size: 8rem;
+    }
+    .landing-text h6{
+        font-size: 1.4rem;
+    }
+    .nav-link{
+        font-size: 3.5rem;
+    }
+    .about p{
+        margin-left: 1.5rem;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .profile-img{
+        margin: 0 0 7rem 0;
+        order: 1;
+    }
+    .portfolio-description .cta{
+        margin-bottom: 2rem;
+        
+    }
+    .portfolio-item{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .portfolio-description{
+        margin: 0;
+        order: 2;
+    }
+    .timeline p{
+        font-size: 1.5rem;
+    }
+    .timeline .date::before{
+        font-size: 1.3rem;
+       
+    }
+    form{
+        width: 100%;
+    }
+    .up{
+        right: 2rem;
+    }
+
+
 }
