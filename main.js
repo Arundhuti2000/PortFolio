@@ -35,4 +35,6 @@ $(document).ready(function(){
     $('.visit-site').on('click',function(){
         location.replace("index.html")
     });
+
+    
 });
