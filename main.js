@@ -6,7 +6,8 @@ $(document).ready(function(){
     });
     $('.nav-link').on('click',function(){
         $(this).toggleClass('open'),
-        $('.top-nav').toggleClass('open')
+        $('.top-nav').toggleClass('open');
+        $('.menu-toggler').toggleClass('open');
     });
         
     $('.visit-site').on('click',function(){
